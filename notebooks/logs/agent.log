@@ -1,0 +1,42 @@
+2026-04-15 13:50:58,039 - INFO - TRACE event=agent_start run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=0 status=ok
+2026-04-15 13:51:00,623 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:02,868 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=1 status=ok
+2026-04-15 13:51:02,869 - INFO - IT Ticket created: {'status': 'success', 'ticket_id': 'IT-20260415135102', 'employee': 'Priya Sharma', 'request_type': 'new hire', 'message': 'IT ticket IT-20260415135102 created for Priya Sharma — new hire provisioning started.'}
+2026-04-15 13:51:02,870 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=1 status=ok
+2026-04-15 13:51:04,881 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:07,933 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=2 status=ok
+2026-04-15 13:51:07,934 - INFO - Welcome email sent: {'status': 'success', 'employee': 'Priya Sharma', 'email': 'priya.sharma@amiseq.com', 'start_date': 'May 5, 2026', 'message': 'Welcome email sent to Priya Sharma at priya.sharma@amiseq.com for start date May 5, 2026.'}
+2026-04-15 13:51:07,934 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=2 status=ok
+2026-04-15 13:51:10,485 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:12,984 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=3 status=ok
+2026-04-15 13:51:12,985 - INFO - Orientation scheduled: {'status': 'success', 'event_id': 'EVT-20260415135112', 'employee': 'Priya Sharma', 'date': 'May 5, 2026', 'department': 'Engineering', 'message': 'Orientation scheduled for Priya Sharma (Engineering) on May 5, 2026.'}
+2026-04-15 13:51:12,985 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=3 status=ok
+2026-04-15 13:51:16,117 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:18,119 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=4 status=ok
+2026-04-15 13:51:18,120 - INFO - Status updated: {'status': 'success', 'employee_id': '', 'task': 'onboarding', 'task_status': 'started', 'message': "Onboarding task 'onboarding' marked as 'started' for ."}
+2026-04-15 13:51:18,120 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=4 status=ok
+2026-04-15 13:51:18,744 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:21,255 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=5 status=ok
+2026-04-15 13:51:21,255 - INFO - Orientation scheduled: {'status': 'success', 'event_id': 'EVT-20260415135121', 'employee': 'Priya Sharma', 'date': 'May 5, 2026', 'department': 'Engineering', 'message': 'Orientation scheduled for Priya Sharma (Engineering) on May 5, 2026.'}
+2026-04-15 13:51:21,255 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=5 status=ok
+2026-04-15 13:51:22,058 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:24,520 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=6 status=ok
+2026-04-15 13:51:24,520 - INFO - Orientation scheduled: {'status': 'success', 'event_id': 'EVT-20260415135124', 'employee': 'Priya Sharma', 'date': 'May 5, 2026', 'department': 'Engineering', 'message': 'Orientation scheduled for Priya Sharma (Engineering) on May 5, 2026.'}
+2026-04-15 13:51:24,521 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=6 status=ok
+2026-04-15 13:51:25,337 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:27,702 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=7 status=ok
+2026-04-15 13:51:27,702 - INFO - Orientation scheduled: {'status': 'success', 'event_id': 'EVT-20260415135127', 'employee': 'Priya Sharma', 'date': 'May 5, 2026', 'department': 'Engineering', 'message': 'Orientation scheduled for Priya Sharma (Engineering) on May 5, 2026.'}
+2026-04-15 13:51:27,702 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=7 status=ok
+2026-04-15 13:51:28,513 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:30,953 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=8 status=ok
+2026-04-15 13:51:30,953 - INFO - Status updated: {'status': 'success', 'employee_id': '', 'task': 'onboarding', 'task_status': 'in_progress', 'message': "Onboarding task 'onboarding' marked as 'in_progress' for ."}
+2026-04-15 13:51:30,954 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=8 status=ok
+2026-04-15 13:51:31,590 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:34,054 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=9 status=ok
+2026-04-15 13:51:34,054 - INFO - Orientation scheduled: {'status': 'success', 'event_id': 'EVT-20260415135134', 'employee': 'Priya Sharma', 'date': 'May 5, 2026', 'department': 'Engineering', 'message': 'Orientation scheduled for Priya Sharma (Engineering) on May 5, 2026.'}
+2026-04-15 13:51:34,055 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=9 status=ok
+2026-04-15 13:51:34,869 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-04-15 13:51:36,876 - INFO - TRACE event=llm_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=10 status=ok
+2026-04-15 13:51:36,877 - INFO - Status updated: {'status': 'success', 'employee_id': '', 'task': 'onboarding', 'task_status': 'completed', 'message': "Onboarding task 'onboarding' marked as 'completed' for ."}
+2026-04-15 13:51:36,877 - INFO - TRACE event=tool_call run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=10 status=ok
+2026-04-15 13:51:36,878 - INFO - TRACE event=agent_finish run_id=8e1e8e6c-1942-43fe-af19-5d50704f50a9 step=10 status=error

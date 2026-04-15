@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Q01",
+    "question": "What is the company's remote work policy?",
+    "ground_truth": "Employees may work remotely up to 3 days per week with manager approval. Remote work is not permitted during the first 30 days of employment. All remote employees must be available during core hours: 10am–4pm local time.",
+    "source_doc": "employee_handbook.md",
+    "category": "policy"
+  },
+  {
+    "id": "Q02",
+    "question": "How do I set up VPN on my laptop?",
+    "ground_truth": "Download Cisco AnyConnect from the IT portal at it.amiseq.com. Enter server address vpn.amiseq.com. Use your company email and temporary password sent by IT. Complete MFA setup via Microsoft Authenticator. Contact IT at it-support@amiseq.com or Slack #it-help if you face issues.",
+    "source_doc": "it_setup_guide.md",
+    "category": "it_setup"
+  },
+  {
+    "id": "Q03",
+    "question": "When is the next payroll cycle?",
+    "ground_truth": "Salaries are processed on the 25th of every month. If the 25th falls on a weekend, payment is made the preceding Friday. Payslips are available via the HiBob portal.",
+    "source_doc": "employee_handbook.md",
+    "category": "payroll"
+  },
+  {
+    "id": "Q04",
+    "question": "What is the dress code for the Bangalore office?",
+    "ground_truth": "The Bangalore office follows a casual dress code. Business formal is required for client meetings regardless of location.",
+    "source_doc": "employee_handbook.md",
+    "category": "policy"
+  },
+  {
+    "id": "Q05",
+    "question": "How many days of annual leave do employees get?",
+    "ground_truth": "Employees receive 20 days of annual leave per year, plus public holidays based on their office location.",
+    "source_doc": "employee_handbook.md",
+    "category": "leave"
+  },
+  {
+    "id": "Q06",
+    "question": "How do I request GitHub access?",
+    "ground_truth": "GitHub access can be requested via the #it-help Slack channel.",
+    "source_doc": "it_setup_guide.md",
+    "category": "it_setup"
+  },
+  {
+    "id": "Q07",
+    "question": "What should I do on my first day?",
+    "ground_truth": "On Day 1 you should: receive and sign employment contract, complete I-9 / right to work verification, set up your laptop and connect to Amiseq-Corp WiFi, activate company email, set up MFA on all systems, meet your onboarding buddy, attend welcome session with HR, and join Slack and introduce yourself in #general.",
+    "source_doc": "onboarding_checklist.md",
+    "category": "onboarding"
+  },
+  {
+    "id": "Q08",
+    "question": "How do I submit an expense report?",
+    "ground_truth": "Expenses must be submitted within 30 days via the Expensify portal. Receipts are required for anything above $25. Meal expenses are capped at $50 per day when traveling.",
+    "source_doc": "employee_handbook.md",
+    "category": "expenses"
+  },
+  {
+    "id": "Q09",
+    "question": "Who is the CEO of Apple?",
+    "ground_truth": "I don't have information about that in the onboarding documents. Please contact HR at hr@amiseq.com",
+    "source_doc": null,
+    "category": "out_of_scope"
+  },
+  {
+    "id": "Q10",
+    "question": "What is the Engineering team's sprint cadence?",
+    "ground_truth": "The Engineering team follows 2-week sprints with a daily standup at 9:30am. All pull requests require 2 approvals and on-call rotation starts after 90 days.",
+    "source_doc": "department_docs.md",
+    "category": "department"
+  }
+]

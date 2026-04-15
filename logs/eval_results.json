@@ -1,0 +1,132 @@
+{
+  "summary": {
+    "n_samples": 10,
+    "avg_faithfulness": 1.0,
+    "avg_answer_relevance": 0.83,
+    "avg_overall_score": 0.8556,
+    "hallucination_risk_count": 1,
+    "avg_eval_latency_ms": 7422.4
+  },
+  "samples": [
+    {
+      "id": "Q01",
+      "question": "What is the company's remote work policy?",
+      "category": "policy",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "All factual claims in the AI answer are directly supported by the Remote Work Policy section of the Amiseq Employee Handbook.",
+      "answer_relevance": 1.0,
+      "relevance_reason": "The AI answer directly and completely addresses the company's remote work policy, providing specific details about frequency, manager approval, core hours, and exceptions.",
+      "overall_score": 1.0,
+      "hallucination_risk": false,
+      "latency_ms": 8308.585166931152
+    },
+    {
+      "id": "Q02",
+      "question": "How do I set up VPN on my laptop?",
+      "category": "it_setup",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "All claims are directly supported by the 'VPN Setup' section of the IT Setup Guide.",
+      "answer_relevance": 1.0,
+      "relevance_reason": "The AI answer directly addresses the question by providing step-by-step instructions on how to set up VPN on a laptop.",
+      "overall_score": 1.0,
+      "hallucination_risk": false,
+      "latency_ms": 7669.0919399261475
+    },
+    {
+      "id": "Q03",
+      "question": "When is the next payroll cycle?",
+      "category": "payroll",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "All claims in the AI answer are directly supported by the Payroll section of the context.",
+      "answer_relevance": 1.0,
+      "relevance_reason": "The AI answer directly and completely addresses the question by providing a specific date for the next payroll cycle.",
+      "overall_score": 1.0,
+      "hallucination_risk": false,
+      "latency_ms": 6751.5199184417725
+    },
+    {
+      "id": "Q04",
+      "question": "What is the dress code for the Bangalore office?",
+      "category": "policy",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "The AI Answer's claim about the dress code for the Bangalore office being 'Casual' is directly supported by the 'Dress Code' section in the Context.",
+      "answer_relevance": 1.0,
+      "relevance_reason": "The AI answer directly and completely addresses the question by providing a specific piece of information about the dress code for the Bangalore office.",
+      "overall_score": 1.0,
+      "hallucination_risk": false,
+      "latency_ms": 7330.045938491821
+    },
+    {
+      "id": "Q05",
+      "question": "How many days of annual leave do employees get?",
+      "category": "leave",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "Both claims are directly supported by the Leave Policy section of the Amiseq Employee Handbook.",
+      "answer_relevance": 1.0,
+      "relevance_reason": "The AI answer directly addresses the question by providing a specific number of days of annual leave and also mentioning public holidays based on office location.",
+      "overall_score": 1.0,
+      "hallucination_risk": false,
+      "latency_ms": 6767.005205154419
+    },
+    {
+      "id": "Q06",
+      "question": "How do I request GitHub access?",
+      "category": "it_setup",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "The AI Answer accurately states that GitHub access can be requested via the #it-help Slack channel, which is explicitly mentioned in the 'Software Access' section of the context.",
+      "answer_relevance": 0.5,
+      "relevance_reason": "The answer partially addresses the question by providing a specific channel to request GitHub access, but it does not provide general instructions on how to make the request.",
+      "overall_score": 0.6666666666666666,
+      "hallucination_risk": false,
+      "latency_ms": 7584.64503288269
+    },
+    {
+      "id": "Q07",
+      "question": "What should I do on my first day?",
+      "category": "onboarding",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "All claims in the AI Answer are directly supported by the Onboarding Checklist, Day 1.",
+      "answer_relevance": 1.0,
+      "relevance_reason": "The AI-generated answer directly addresses the question by providing a comprehensive list of tasks to complete on the first day, which is exactly what the question asks.",
+      "overall_score": 1.0,
+      "hallucination_risk": false,
+      "latency_ms": 8211.684942245483
+    },
+    {
+      "id": "Q08",
+      "question": "How do I submit an expense report?",
+      "category": "expenses",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "All claims are directly supported by the Expense Policy section of the Context.",
+      "answer_relevance": 0.8,
+      "relevance_reason": "The AI answer provides specific instructions on how to submit an expense report, including the required portal and time frame, but does not fully address the receipt requirement for amounts above $25.",
+      "overall_score": 0.888888888888889,
+      "hallucination_risk": false,
+      "latency_ms": 7516.074180603027
+    },
+    {
+      "id": "Q09",
+      "question": "Who is the CEO of Apple?",
+      "category": "out_of_scope",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "The AI Answer's claim that there is no information about HR in the onboarding documents is directly supported by the context, as HR is not mentioned at all.",
+      "answer_relevance": 0.0,
+      "relevance_reason": "The AI's response is completely irrelevant to the question and does not provide any information about the CEO of Apple.",
+      "overall_score": 0.0,
+      "hallucination_risk": true,
+      "latency_ms": 7356.175899505615
+    },
+    {
+      "id": "Q10",
+      "question": "What is the Engineering team's sprint cadence?",
+      "category": "department",
+      "faithfulness": 1.0,
+      "faithfulness_reason": "The AI Answer accurately quotes the sprint cadence information from the provided context document.",
+      "answer_relevance": 1.0,
+      "relevance_reason": "The AI-generated answer directly and completely addresses the question by providing the Engineering team's sprint cadence.",
+      "overall_score": 1.0,
+      "hallucination_risk": false,
+      "latency_ms": 6728.948354721069
+    }
+  ]
+}
