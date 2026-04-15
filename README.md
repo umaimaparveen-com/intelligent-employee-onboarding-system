@@ -188,6 +188,7 @@ LANGCHAIN_PROJECT=rag-onboarding
 
 ## System Architecture Design
 
+```mermaid
 graph TD
     User([User: New Hire / HR Admin]) -- Natural Language Query --> Router[Orchestration Layer: Router]
 
@@ -212,6 +213,7 @@ graph TD
     style User fill:#f9f,stroke:#333,stroke-width:2px
     style Router fill:#bbf,stroke:#333,stroke-width:2px
     style VectorStore fill:#dfd,stroke:#333,stroke-width:2px
+
 ---
 
 ## Key Design Decisions
