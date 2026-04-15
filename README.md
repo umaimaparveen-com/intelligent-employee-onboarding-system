@@ -215,6 +215,7 @@ graph TD
     style Router fill:#bbf,stroke:#333,stroke-width:2px
     style VectorStore fill:#dfd,stroke:#333,stroke-width:2px
 
+```
 ---
 
 ## Key Design Decisions
