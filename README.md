@@ -189,19 +189,20 @@ LANGCHAIN_PROJECT=rag-onboarding
 ## System Architecture Design
 
 ```mermaid
+
 graph TD
     User([User: New Hire / HR Admin]) -- Natural Language Query --> Router[Orchestration Layer: Router]
 
     Router -- Q&A Query --> RAG[RAG Pipeline]
     Router -- Action Request --> Agent[Onboarding Agent]
 
-    subgraph "Knowledge Retrieval"
+    subgraph RAG_Pipeline [Knowledge Retrieval]
     RAG --> Processing[Embed & Retrieve]
     Processing --> Synthesis[Synthesize with Llama3]
     Synthesis --> VectorStore[(ChromaDB Vector Store)]
     end
 
-    subgraph "Autonomous Action"
+    subgraph Agent_Workflow [Autonomous Action]
     Agent --> ReAct[ReAct Loop: Reason-Act-Observe]
     ReAct --> Tools{Tools}
     Tools --> Tool1[IT Ticket]
