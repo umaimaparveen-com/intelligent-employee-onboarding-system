@@ -188,31 +188,30 @@ LANGCHAIN_PROJECT=rag-onboarding
 
 ## System Architecture Design
 
-┌─────────────────────────────────────────────────┐
-│           USER (New Hire / HR Admin)            │
-└─────────────────────┬───────────────────────────┘
-                      │ Natural Language Query
-                      ▼
-┌─────────────────────────────────────────────────┐
-│         ORCHESTRATION LAYER (Router)            │
-│     Routes to RAG pipeline OR Agent             │
-└──────────┬──────────────────────┬───────────────┘
-           │                      │
-     Q&A Query              Action Request
-           │                      │
-           ▼                      ▼
-┌──────────────────┐   ┌──────────────────────────┐
-│   RAG PIPELINE   │   │     ONBOARDING AGENT     │
-│ Embed → Retrieve │   │  ReAct Loop (Reason →    │
-│ → Synthesize     │   │  Act → Observe)          │
-└────────┬─────────┘   └───────────┬──────────────┘
-         │                          │
-         ▼                          ▼
-┌──────────────────┐   ┌──────────────────────────┐
-│  ChromaDB Vector │   │  Tools: IT Ticket,       │
-│  Store + Llama3  │   │  Email, Calendar, Status │
-└──────────────────┘   └──────────────────────────┘
+graph TD
+    User([User: New Hire / HR Admin]) -- Natural Language Query --> Router[Orchestration Layer: Router]
 
+    Router -- Q&A Query --> RAG[RAG Pipeline]
+    Router -- Action Request --> Agent[Onboarding Agent]
+
+    subgraph "Knowledge Retrieval"
+    RAG --> Processing[Embed & Retrieve]
+    Processing --> Synthesis[Synthesize with Llama3]
+    Synthesis --> VectorStore[(ChromaDB Vector Store)]
+    end
+
+    subgraph "Autonomous Action"
+    Agent --> ReAct[ReAct Loop: Reason-Act-Observe]
+    ReAct --> Tools{Tools}
+    Tools --> Tool1[IT Ticket]
+    Tools --> Tool2[Email]
+    Tools --> Tool3[Calendar]
+    Tools --> Tool4[Status Update]
+    end
+
+    style User fill:#f9f,stroke:#333,stroke-width:2px
+    style Router fill:#bbf,stroke:#333,stroke-width:2px
+    style VectorStore fill:#dfd,stroke:#333,stroke-width:2px
 ---
 
 ## Key Design Decisions
